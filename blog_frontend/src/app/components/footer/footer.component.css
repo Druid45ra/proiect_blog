@@ -1,0 +1,29 @@
+/* Custom styles for the Footer component */
+
+/* Style for the footer container */
+.footer-container {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the footer links */
+.footer-container a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the footer text */
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+}

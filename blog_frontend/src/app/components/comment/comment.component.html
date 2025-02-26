@@ -1,0 +1,13 @@
+<div class="comment-container">
+    <div class="comment-header">
+        <span class="comment-author">{{ comment.author }}</span> commented on <span class="comment-date">{{ comment.created_at | date:'medium' }}</span>
+    </div>
+    <div class="comment-content">
+        {{ comment.content }}
+    </div>
+    <div class="comment-footer">
+        <button class="comment-button" *ngIf="canEdit" (click)="editComment(comment)">Edit</button>
+        <button class="comment-button" *ngIf="canDelete" (click)="deleteComment(comment.id)">Delete</button>
+    </div>
+</div>
+

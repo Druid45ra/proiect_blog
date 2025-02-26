@@ -1,0 +1,33 @@
+<div class="admin-panel-container">
+    <div class="admin-panel-header">
+        Admin Panel
+    </div>
+    <div class="admin-panel-actions">
+        <button class="admin-panel-button">Add User</button>
+        <button class="admin-panel-button">Manage Articles</button>
+        <button class="admin-panel-button">View Comments</button>
+    </div>
+    <table class="admin-panel-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>
+                    <button class="admin-panel-button">Edit</button>
+                    <button class="admin-panel-button">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
