@@ -1,0 +1,9 @@
+<div *ngIf="article; else loading">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+    <small>Publicat la: {{ article.created_at }}</small>
+</div>
+
+<ng-template #loading>
+    <p>Se încarcă articolul...</p>
+</ng-template>
